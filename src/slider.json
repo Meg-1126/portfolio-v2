@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "./images/work-clone-muji.png",
+    "title": "Portfolio website",
+    "description": "My portofolio website. I used React.js and Material UI for the interface."
+  },
+  {
+    "id": 2,
+    "image": "./images/work-clone-muji.png",
+    "title": "Clone website(Muji)",
+    "description": "My portofolio website. I used React.js and Material UI for the interface."
+  },
+  {
+    "id": 3,
+    "image": "./images/work-clone-muji.png",
+    "title": "House Q&A",
+    "description": "My portofolio website. I used React.js and Material UI for the interface."
+  },
+  {
+    "id": 4,
+    "image": "./images/work-rpg-game.png",
+    "title": "RPG",
+    "description": "My portofolio website. I used React.js and Material UI for the interface."
+  }
+]

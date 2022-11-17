@@ -61,7 +61,7 @@ function Contact() {
           margin: "30px auto",
         }}
       >
-        Register
+        Submit
       </Button>
     </Box>
   );
