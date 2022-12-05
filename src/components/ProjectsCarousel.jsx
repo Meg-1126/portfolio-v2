@@ -20,7 +20,7 @@ function ProjectsCarousel() {
       navButtonsAlwaysVisible={true}
     >
       {slider.map((item) => (
-        <CarouselItems key={item.id} item={item} />
+        <CarouselItems key={item.id} item={item}/>
       ))}
     </Carousel>
   );

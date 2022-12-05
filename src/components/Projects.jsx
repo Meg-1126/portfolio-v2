@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import ProjectsCarousel from "./ProjectsCarousel";
 
 function Projects() {
+  
   return (
     <>
       <Typography
