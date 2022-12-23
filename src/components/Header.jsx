@@ -20,10 +20,10 @@ function Header() {
               <Box
                 component="img"
                 className="img__logo"
-                src="./images/portfolio-logo.png"
+                src={`${process.env.PUBLIC_URL}/images/portfolio-logo.png`}
                 sx={{
                   width: "50px",
-                  "&:hover": { transform: "scale(0.8)", transition: ".3s" },
+                  "&:hover": { opacity: "0.9", transition: ".3s" },
                 }}
               />
             </Link>

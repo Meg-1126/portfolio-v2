@@ -25,7 +25,7 @@ function Hero() {
       <Box
         component="img"
         className="photo__profile1"
-        src="images/profile1_home.jpg"
+        src={`${process.env.PUBLIC_URL}/images//profile1_home.jpg`}
         sx={{
           width: "200px",
           mt: "30px",
