@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
 
 function Hero() {
   return (
@@ -11,7 +12,7 @@ function Hero() {
         variant="body1"
         sx={{
           pt: "20px",
-          width: "60%",
+          width: "70%",
           margin: "0 auto",
           fontSize: "1.5rem",
           textAlign: "left",
@@ -32,6 +33,23 @@ function Hero() {
           borderRadius: "10px",
         }}
       ></Box>
+      <Button
+        variant="contained"
+        sx={{
+          backgroundColor: "#3b3b3b",
+          color: "#fff",
+          display: "flex",
+          textAlign: "center",
+          margin:"30px auto",
+          px: 4,
+          py: 1
+        }}
+      >
+        <a href="mailto:kamayatu91@gmail.com" target="_blank" style={{textDecoration: "none", color: "#fff", display:"block"}}>
+          Email 
+        </a>
+        <SendIcon sx={{display: "block"}}/>
+      </Button>
     </Box>
   );
 }

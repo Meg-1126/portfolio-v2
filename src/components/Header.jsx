@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AppBar, Box, Button, Grid, IconButton } from "@mui/material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -12,7 +13,7 @@ const linkStyle = {
 
 function Header() {
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" >
       <Grid container spacing={5} alignItems="center">
         <Grid item xs={4}>
           <Button>
@@ -41,9 +42,14 @@ function Header() {
             </Link>
           </Button>
           <Button>
-            <Link className="route" to="/contact" style={linkStyle}>
+            <a
+              href="mailto:kamayatu91@gmail.com"
+              target="_blank"
+              style={linkStyle}
+            >
               CONTACT
-            </Link>
+            </a>
+            <OpenInNewIcon sx={{color:"#3b3b3b"}}/>
           </Button>
         </Grid>
         <Grid item xs={4}>

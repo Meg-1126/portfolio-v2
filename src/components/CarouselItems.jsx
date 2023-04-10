@@ -3,10 +3,13 @@ import {
   Card,
   CardActionArea,
   CardMedia,
+  Chip,
   Container,
   Typography,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
+import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 
 function CarouselItems({ item }) {
   const navigate = useNavigate();
@@ -23,8 +26,8 @@ function CarouselItems({ item }) {
   };
 
   return (
-    <Container onClick={handleClick}>
-      <Card sx={{ width: 500, height: 500, margin: "0 auto" }}>
+    <Container onClick={handleClick} sx={{ maxWidth: 800 }}>
+      <Card sx={{ width: 650, height: 500, margin: "0 auto" }}>
         <CardActionArea sx={{ "&hover": { backgroundColor: "#FFF" } }}>
           <CardMedia
             component="img"
@@ -34,7 +37,21 @@ function CarouselItems({ item }) {
           />
         </CardActionArea>
       </Card>
-      <Typography>{item.title}</Typography>
+      <Typography variant="h5" sx={{mt: 2}}>{item.title}</Typography>
+      <Typography sx={{ pb: 1 }}>{item.description}</Typography>
+      {item.member === 2 ? (
+        <Chip
+          icon={<PeopleOutlineIcon style={{ color: "#fff" }} />}
+          label="Group"
+          sx={{ mb: 3, backgroundColor: "#3b3b3b", color: "#fff" }}
+        />
+      ) : (
+        <Chip
+          icon={<PermIdentityIcon style={{ color: "#fff" }} />}
+          label="Personal"
+          sx={{ mb: 3, backgroundColor: "#3b3b3b", color: "#fff" }}
+        />
+      )}
     </Container>
   );
 }
