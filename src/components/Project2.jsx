@@ -35,7 +35,7 @@ function Project2() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
@@ -60,7 +60,7 @@ function Project2() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
@@ -75,13 +75,14 @@ function Project2() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          In this project, I had a hardtime to implement a carousel to display both texts and the food images because I made it from scratch.
+          In this project, I had a hardtime to implement a carousel to display both texts and the food images because I made it from scratch.<br/>
+          I found a solution by combining some ideas from the multiple tutorial websites for creating the carousel without any libraries, and the official documentation of JavaScript.
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           FUTURE IMPROVEMENTS
@@ -90,7 +91,7 @@ function Project2() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,

@@ -13,7 +13,7 @@ function Project4() {
         <Box
           component="img"
           className="photo__muji"
-          src={`${process.env.PUBLIC_URL}/images/work-portfolio-ver2.png`}
+          src={`${process.env.PUBLIC_URL}/images/work-portfolio.png`}
           sx={{
             width: "600px",
             mt: "30px",
@@ -29,9 +29,6 @@ function Project4() {
           <Link className="route" to="/">
             Website
           </Link>
-          {/* <a href="#" target="_blank">
-            Website
-          </a> */}
         </Typography>
         <Typography variant="h5" sx={{ pt: 10 }}>
           OVERVIEW
@@ -40,13 +37,14 @@ function Project4() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          My portfolio website using React.js which has a description of my self
+          and the web apps and websites I created.
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           TECHNOLOGIES
@@ -55,13 +53,13 @@ function Project4() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          React.js | Material UI | Framer Motion(Animation)
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           CHALLENGES
@@ -70,13 +68,16 @@ function Project4() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          I did a lot of research about using MUI components and learned that
+          they are really handy and have many cool designs. Sometimes it was a
+          bit tricky to implement but I will keep using it in my future
+          projects.
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           FUTURE IMPROVEMENTS
@@ -85,13 +86,16 @@ function Project4() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          <ul>
+            <li>Add contact form with connection to the back-end</li>
+            <li>Add more animations which make my website more sophisticated and attractive in terms of design</li>
+          </ul>
         </Typography>
         <ProjectArrows />
       </Container>

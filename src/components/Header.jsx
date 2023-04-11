@@ -13,7 +13,7 @@ const linkStyle = {
 
 function Header() {
   return (
-    <AppBar position="fixed" >
+    <AppBar position="fixed" sx={{ backgroundColor: "#fff" }}>
       <Grid container spacing={5} alignItems="center">
         <Grid item xs={4}>
           <Button>
@@ -31,17 +31,17 @@ function Header() {
           </Button>
         </Grid>
         <Grid item xs={4}>
-          <Button>
+          <Button sx={{ "&:hover": { backgroundColor: "#EDEAEB" } }}>
             <Link className="route" to="/about" style={linkStyle}>
               ABOUT
             </Link>
           </Button>
-          <Button>
+          <Button sx={{ "&:hover": { backgroundColor: "#EDEAEB" } }}>
             <Link className="route" to="/projects" style={linkStyle}>
               PROJECTS
             </Link>
           </Button>
-          <Button>
+          <Button sx={{ "&:hover": { backgroundColor: "#EDEAEB" } }}>
             <a
               href="mailto:kamayatu91@gmail.com"
               target="_blank"
@@ -49,7 +49,7 @@ function Header() {
             >
               CONTACT
             </a>
-            <OpenInNewIcon sx={{color:"#3b3b3b"}}/>
+            <OpenInNewIcon sx={{ color: "#3b3b3b" }} />
           </Button>
         </Grid>
         <Grid item xs={4}>

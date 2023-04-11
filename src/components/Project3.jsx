@@ -35,13 +35,23 @@ function Project3() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          This application enables users to calculate the tip and total payment
+          per person.
+          <br />
+          Users can follow the easy three steps below.
+          <ol>
+            <li className="order">Enter your bill</li>
+            <li className="order">Add a tip (%)</li>
+            <li className="order">
+              Enter the number of people to split the bill
+            </li>
+          </ol>
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           TECHNOLOGIES
@@ -50,13 +60,13 @@ function Project3() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          React.js | CSS
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           CHALLENGES
@@ -65,13 +75,15 @@ function Project3() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          In this project, I took a long time to understand the concept of
+          useContext. But I found a solution how to pass value to the different
+          component by checking an official documentation and asking my mentor.
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           FUTURE IMPROVEMENTS
@@ -80,13 +92,16 @@ function Project3() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          <ul>
+            <li>Add sales tax based on cities/states</li>
+            <li>Improve the entire design</li>
+          </ul>
         </Typography>
         <ProjectArrows />
       </Container>

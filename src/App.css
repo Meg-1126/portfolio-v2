@@ -9,3 +9,11 @@ body {
 a, a:visited, a:hover, a:active {
   color: #3B3B3B;
 }
+
+li {
+  list-style-type: square;
+}
+
+.order {
+  list-style-type: decimal;
+}

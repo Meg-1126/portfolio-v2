@@ -35,7 +35,7 @@ function Project1() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
@@ -52,7 +52,7 @@ function Project1() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
@@ -69,13 +69,17 @@ function Project1() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          <ul>
+            <li>Understand how to fetch a data from the database</li>
+            <li>Understand how data type works in TypeScript</li>
+            <li>Finish my tasks according to schedule</li>
+          </ul>
         </Typography>
         <Typography variant="h5" sx={{ pt: 5 }}>
           FUTURE IMPROVEMENTS
@@ -84,13 +88,16 @@ function Project1() {
           variant="body1"
           sx={{
             fontSize: "1.2rem",
-            width: "70%",
+            width: "60%",
             margin: "0 auto",
             textAlign: "left",
             pt: 2,
           }}
         >
-          description
+          <ul>
+            <li>Add the feature that a user can follow other users</li>
+            <li>Improve the mobile design</li>
+          </ul>
         </Typography>
         <ProjectArrows />
       </Container>

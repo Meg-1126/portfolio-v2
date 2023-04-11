@@ -18,6 +18,7 @@ function ProjectsCarousel() {
       PrevIcon={<ArrowCircleLeftIcon />}
       autoPlay={false}
       navButtonsAlwaysVisible={true}
+      sx={{pb: 5}}
     >
       {slider.map((item) => (
         <CarouselItems key={item.id} item={item}/>

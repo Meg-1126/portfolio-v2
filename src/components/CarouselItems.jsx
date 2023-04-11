@@ -37,19 +37,21 @@ function CarouselItems({ item }) {
           />
         </CardActionArea>
       </Card>
-      <Typography variant="h5" sx={{mt: 2}}>{item.title}</Typography>
+      <Typography variant="h5" sx={{ mt: 2 }}>
+        {item.title}
+      </Typography>
       <Typography sx={{ pb: 1 }}>{item.description}</Typography>
       {item.member === 2 ? (
         <Chip
           icon={<PeopleOutlineIcon style={{ color: "#fff" }} />}
           label="Group"
-          sx={{ mb: 3, backgroundColor: "#3b3b3b", color: "#fff" }}
+          sx={{ mb: 3, backgroundColor: "#889389", color: "#fff" }}
         />
       ) : (
         <Chip
           icon={<PermIdentityIcon style={{ color: "#fff" }} />}
           label="Personal"
-          sx={{ mb: 3, backgroundColor: "#3b3b3b", color: "#fff" }}
+          sx={{ mb: 3, backgroundColor: "#889389", color: "#fff" }}
         />
       )}
     </Container>
