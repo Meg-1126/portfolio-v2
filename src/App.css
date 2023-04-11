@@ -17,3 +17,9 @@ li {
 .order {
   list-style-type: decimal;
 }
+
+@media only screen and (max-width: 960px) {
+  .fullName {
+    font-size: 10px;
+  }
+}
