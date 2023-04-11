@@ -1,5 +1,6 @@
 ## About this project
 This is my portfolio website using React.js and Material UI.
+![Top page](./public/images/work-portfolio.png)
 
 ## View the website
 You can access my website through [this link](#)
