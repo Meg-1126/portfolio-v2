@@ -12,10 +12,10 @@ function Project4() {
         </Typography>
         <Box
           component="img"
-          className="photo__muji"
+          className="photo__portfolio"
           src={`${process.env.PUBLIC_URL}/images/work-portfolio.png`}
           sx={{
-            width: "600px",
+            // width: "600px",
             mt: "30px",
             pt: "5px",
             borderRadius: "10px",

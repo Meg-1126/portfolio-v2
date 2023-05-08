@@ -14,7 +14,7 @@ function Project3() {
           className="photo__muji"
           src={`${process.env.PUBLIC_URL}/images/work-tip.png`}
           sx={{
-            width: "600px",
+            // width: "600px",
             mt: "30px",
             borderRadius: "10px",
           }}

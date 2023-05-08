@@ -2,14 +2,15 @@ import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import {SiGmail} from "react-icons/si";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 const theme = createTheme({
   typography: {
     subtitle1: {
-      fontSize: 5,
+      fontSize: 1,
     },
     body1: {
-      fontSize: "20px",
+      fontSize: "10px",
     },
     button: {
       fontStyle: "italic",
@@ -19,19 +20,19 @@ const theme = createTheme({
 
 
 function Hero() {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+  const isMedScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ height: "100vh" }}>
         <Typography
-          variant={isSmallScreen ? "h4" : "h2"}
+          variant={isMedScreen ? "h4" : "h2"}
           sx={{ pt: "150px", fontWeight: "bold" }}
           className="fullName"
         >
           MEGUMI AKAMA
         </Typography>
         <Typography
-          variant={isSmallScreen ? "subtitle1" : "body1"}
+          variant={isMedScreen ? "subtitle1" : "body1"}
           sx={{
             pt: "20px",
             width: "70%",
@@ -45,6 +46,7 @@ function Hero() {
           She’s currently studying at{" "}
           <a href="https://ciccc.ca/" target="_blank">
             Cornerstone Community College of Canada
+            <OpenInNewIcon fontSize="small" />
           </a>{" "}
           to brush up on her front-end developer skills.
         </Typography>

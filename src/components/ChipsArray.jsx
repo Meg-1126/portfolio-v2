@@ -32,8 +32,9 @@ export default function ChipsArray() {
         // flexWrap: "wrap",
         listStyle: "none",
         p: 2,
+        ml: 5,
         mt: 2,
-        width: "80%",
+        width: "70%",
       }}
       component="ul"
     >

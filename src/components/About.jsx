@@ -1,8 +1,21 @@
 import React from "react";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Box, Button, Grid, Typography, useMediaQuery } from "@mui/material";
 import ChipsArray from "./ChipsArray";
 
+const theme = createTheme({
+  typography: {
+    subtitle1: {
+      fontSize: 3,
+    },
+    body1: {
+      fontSize: "12px",
+    },
+  },
+});
+
 function About() {
+  const isMedScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
   return (
     <>
       <Grid
@@ -11,7 +24,7 @@ function About() {
         justifyContent="center"
         sx={{ height: "90vh", background: "#EDEAEB", pt: 10 }}
       >
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <Box
             component="img"
             src={`${process.env.PUBLIC_URL}/images/profile2_wall.jpeg`}
@@ -19,17 +32,21 @@ function About() {
             sx={{ width: "300px", borderRadius: "10px" }}
           />
         </Grid>
-        <Grid item xs={6}>
-          <Typography variant="h3" sx={{ textAlign: "left", pb: 2 }}>
+        <Grid item xs={12} md={6}>
+          <Typography
+            variant={isMedScreen ? "h4" : "h3"}
+            sx={{ textAlign: "left", pt: 5, pb: 2, pl: 5 }}
+          >
             About me
           </Typography>
           <Typography
-            variant="body1"
+            variant={isMedScreen ? "body2" : "body1"}
             sx={{
-              width: "80%",
+              width: "85%",
               fontSize: "1.3rem",
               textAlign: "left",
               pb: 2,
+              pl: 5,
             }}
           >
             <strong>Megumi</strong> is a React developer. She was born and

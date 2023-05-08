@@ -14,7 +14,7 @@ function Project1() {
           className="photo__fantasyMap"
           src={`${process.env.PUBLIC_URL}/images/work-fantasy-map.png`}
           sx={{
-            width: "600px",
+            // width: "600px",
             mt: "30px",
             borderRadius: "10px",
           }}

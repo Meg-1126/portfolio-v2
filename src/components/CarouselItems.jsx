@@ -27,13 +27,14 @@ function CarouselItems({ item }) {
 
   return (
     <Container onClick={handleClick} sx={{ maxWidth: 800 }}>
-      <Card sx={{ width: 650, height: 500, margin: "0 auto" }}>
+      <Card className="wrapper-img-project" sx={{margin: "0 auto" }}>
         <CardActionArea sx={{ "&hover": { backgroundColor: "#FFF" } }}>
           <CardMedia
             component="img"
-            height="500"
+            // height="500"
             image={item.image}
             alt="Project1"
+            className="img-project"
           />
         </CardActionArea>
       </Card>
