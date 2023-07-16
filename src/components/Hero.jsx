@@ -98,7 +98,7 @@ function Hero() {
           }}
         >
           <a
-            href="https://drive.google.com/file/d/1BvkH3rYmqnwQV46jH6ept6PH7WWpRk00/view?usp=sharing"
+            href="https://drive.google.com/file/d/1O6t5mGU2zV3dRqC5kjbelO0YM8om_oGS/view?usp=sharing"
             target="_blank"
             style={{
               textDecoration: "none",
