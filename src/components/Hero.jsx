@@ -90,7 +90,6 @@ function Hero() {
           sx={{
             backgroundColor: "#889389",
             color: "#fff",
-            // display: "flex",
             textAlign: "center",
             margin: "30px auto",
             px: 2,
@@ -98,7 +97,7 @@ function Hero() {
           }}
         >
           <a
-            href="https://drive.google.com/file/d/1O6t5mGU2zV3dRqC5kjbelO0YM8om_oGS/view?usp=sharing"
+            href="https://drive.google.com/file/d/1S_Y33KmdT8XZG-EAcTz6ZLAg4s006zlL/view?usp=sharing"
             target="_blank"
             style={{
               textDecoration: "none",
